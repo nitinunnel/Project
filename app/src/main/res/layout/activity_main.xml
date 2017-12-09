@@ -2,10 +2,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/startgame"
+    android:background="@drawable/ss"
     android:orientation="vertical"
     android:padding="32dp">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="ปริศนา"
+        android:textSize="45dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="แฮร์รี่พอตเตอร์"
+        android:textSize="50dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +34,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="start"
+            android:text="เริ่ม"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:background="#EE0033"
             android:layout_marginRight="10dp"/>
 
         <Button
@@ -25,7 +45,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="exit"
+            android:text="ออก"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:background="#EE0033"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
 

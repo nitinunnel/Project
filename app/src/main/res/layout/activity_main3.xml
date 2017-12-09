@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.acer.project.Main3Activity">
+    tools:context="com.example.acer.project.Main3Activity"
+    android:background="@drawable/sc">
 
     <TextView
         android:id="@+id/textView"
@@ -16,12 +17,13 @@
         android:textSize="40dp"
         android:layout_margin="20dp"
         android:text="SCORE"
+        android:textColor="@android:color/white"
         tools:ignore="Suspicious0dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_margin="20dp"
-        android:textSize="180dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="130dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
@@ -31,7 +33,9 @@
 
     <Button
         android:id="@+id/exit_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="EXIT" />
+        android:layout_marginBottom="30dp"
+        android:text="กลับไปหน้าแรก" />
 </LinearLayout>
