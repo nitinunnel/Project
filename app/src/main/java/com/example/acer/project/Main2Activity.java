@@ -112,9 +112,9 @@ public class Main2Activity extends AppCompatActivity {
             }
         }
 
-        Intent pScore = new Intent(Main2Activity.this,Main3Activity.class);
-        pScore.putExtra("score",score);
-        startActivity(pScore);
+        //Intent pScore = new Intent(Main2Activity.this,Main3Activity.class);
+        //pScore.putExtra("score",score);
+        //startActivity(pScore);
 
     }
 }

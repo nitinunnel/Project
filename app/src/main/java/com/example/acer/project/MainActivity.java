@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button1, button2;
     static int i;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {                //
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -20,19 +20,12 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
 
         button1.setOnClickListener(new View.OnClickListener() {
-
-
             public void onClick(View view) {
-
-for(i = 0; i <= 9; i++){
-    Intent a = new Intent(MainActivity.this, Main2Activity.class);
-    a.putExtra("i", i);
-    startActivity(a);
-}
-
-
-
-
+                for(i = 0; i <= 9; i++){
+                    Intent a = new Intent(MainActivity.this, Main2Activity.class);
+                    a.putExtra("i", i);
+                    startActivity(a);
+                }
             }
         });
 

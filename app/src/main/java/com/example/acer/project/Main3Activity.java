@@ -38,7 +38,7 @@ public class Main3Activity extends AppCompatActivity {
         });
 
 
-      Intent intent = getIntent();
+      /*Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
 
         ContentValues cv = new ContentValues();
@@ -60,7 +60,7 @@ public class Main3Activity extends AppCompatActivity {
 
             int score = cursor.getInt(cursor.getColumnIndex(DBHelper.COL_COUNT));
             textView.setText(String.valueOf(score));
-        }
+        }*/
     }
 
 }
