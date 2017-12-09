@@ -62,6 +62,7 @@ public class Main3Activity extends AppCompatActivity {
             int score = cursor.getInt(cursor.getColumnIndex(DBHelper.COL_COUNT));
             textView.setText(String.valueOf(score));
         }
+        potterData.score = 0;
     }
 
 }
