@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DBProject</string>
+
+    <string name="quiz_1">อาจารย์สอนวิชาป้องกันตัวจากศาสตร์มืดคนที่ 6 ในโรงเรียนของแฮร์รี่คือใคร?</string>
+    <string name="quiz_2">สถานที่ที่ต้องเข้าไปในตู้โทรศัพท์แล้วกดรหัส 62442 คือ?</string>
+    <string name="quiz_3">คนที่ชักนำแฮร์รี่เข้าทีมควิชดิชคือใคร?</string>
+    <string name="quiz_4">ผู้ก่อตั้งฮอกวอตส์มีกี่คน?</string>
+    <string name="quiz_5">คนที่ได้จูบแรกของแฮร์รี่ พอตเตอร์คือใคร?</string>
+    <string name="quiz_6">สถานที่เกิดโศกนาฎกรรมกับครอบครัวพอตเตอร์คือที่ใด?</string>
+    <string name="quiz_7">สถานที่ที่ลูปินใช้กลายร่างเป็นมนุษย์หมาป่าอย่างปลอดภัยคือที่ใด?</string>
+    <string name="quiz_8">ใครคือคนพาแฮร์รี่ มาส่งที่บ้านเดอร์สลีย์?</string>
+    <string name="quiz_9">ใครเป็นพ่อทูนหัวของแฮร์รี่?</string>
+    <string name="quiz_10">แฮร์รี่ซื้อไม้กายสิทธิ์ที่ร้านอะไร?</string>
+
+
+    <string name="ans_1">เซเวอร์รัส สเนป</string>
+    <string name="ans_2">กระทรวงเวทมนต์</string>
+    <string name="ans_3">ศาสตราจารย์มักกอนนากัล</string>
+    <string name="ans_4">4 คน</string>
+    <string name="ans_5">โช แชง</string>
+    <string name="ans_6">ก็อดดริด ฮอลโลว์</string>
+    <string name="ans_7">เพิงโหยหวน</string>
+    <string name="ans_8">รูเบอัส แฮกริด</string>
+    <string name="ans_9">ซิเรียส แบล็ค</string>
+    <string name="ans_10">ร้านโอลิแวนเดอร์</string>
+
+
+    <string name="wrong_1">โดโลเรส อัมบริดจ์</string>
+    <string name="wrong_2">ห้องแห่งความลับ</string>
+    <string name="wrong_3">รอน วีสลีย์</string>
+    <string name="wrong_4">5 คน</string>
+    <string name="wrong_5">จินนี่ วีสลี่ย์</string>
+    <string name="wrong_6">ฮอกวอสต์</string>
+    <string name="wrong_7">กริมโมลด์เลซ</string>
+    <string name="wrong_8">รอน วีสลีย์</string>
+    <string name="wrong_9">เจมส์ พอตเตอร์</string>
+    <string name="wrong_10">ร้านหม้อใหญ่รั่ว</string>
+
+
+</resources>
