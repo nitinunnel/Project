@@ -11,17 +11,19 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button1, button2;
     static int i;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {                //
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
 
+        // method ที่กำหนดว่าเมื่อมีการ Click ที่ปุ่ม Start จะให้ทำการส่งค่า i ไปยังหน้า Main2Activity
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                for(i = 0; i <= 9; i++){
+                for (i = 0; i <= 9; i++) {
                     Intent a = new Intent(MainActivity.this, Main2Activity.class);
                     a.putExtra("i", i);
                     startActivity(a);
@@ -29,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // method ที่กำหนดว่าเมื่อมีการ Click ที่ปุ่ม Exit จะทำการปิดแอพพลิเคชั่น
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent homeIntent = new Intent(Intent.ACTION_MAIN);
-                homeIntent.addCategory( Intent.CATEGORY_HOME );
+                homeIntent.addCategory(Intent.CATEGORY_HOME);
                 homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(homeIntent);
             }
