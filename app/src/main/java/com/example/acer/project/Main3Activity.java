@@ -20,6 +20,7 @@ public class Main3Activity extends AppCompatActivity {
     TextView textView;
     private SQLiteDatabase db;
     private DBHelper mDb;
+    private PotterData potterData;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +38,12 @@ public class Main3Activity extends AppCompatActivity {
             }
         });
 
+        mDb = new DBHelper(this);
+        db = mDb.getReadableDatabase();
 
-      /*Intent intent = getIntent();
-        int score = intent.getIntExtra("score", 0);
 
         ContentValues cv = new ContentValues();
-        cv.put(mDb.COL_COUNT, score);
+        cv.put(mDb.COL_COUNT, potterData.score);
         db.insert(mDb.TABLE_NAME, null, cv);
         loadDb();
     }
@@ -60,7 +61,7 @@ public class Main3Activity extends AppCompatActivity {
 
             int score = cursor.getInt(cursor.getColumnIndex(DBHelper.COL_COUNT));
             textView.setText(String.valueOf(score));
-        }*/
+        }
     }
 
 }
