@@ -23,7 +23,7 @@ public class DBHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "("
                 + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + COL_COUNT + " INTEGER, ";
+                + COL_COUNT + " INTEGER" + ")";
 
         db.execSQL(CREATE_TABLE);
         insertInitialData(db);

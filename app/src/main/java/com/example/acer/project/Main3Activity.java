@@ -31,22 +31,14 @@ public class Main3Activity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder dialog = new AlertDialog.Builder(Main3Activity.this);
-                dialog.setTitle("Confirm Exit");
-                dialog.setMessage("แน่ใจว่าต้องการออกจากแอพ?");
-                dialog.setPositiveButton("ออก", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                });
-                dialog.setNegativeButton("ยกเลิก", null);
-                dialog.show();
+                Intent home = new Intent(Main3Activity.this,MainActivity.class);
+                startActivity(home);
+
             }
         });
 
 
-        Intent intent = getIntent();
+      Intent intent = getIntent();
         int score = intent.getIntExtra("score", 0);
 
         ContentValues cv = new ContentValues();
@@ -67,7 +59,7 @@ public class Main3Activity extends AppCompatActivity {
         while (cursor.moveToNext()){
 
             int score = cursor.getInt(cursor.getColumnIndex(DBHelper.COL_COUNT));
-            textView.setText(score);
+            textView.setText(String.valueOf(score));
         }
     }
 
